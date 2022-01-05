@@ -15,7 +15,8 @@ public class CreateNewTask extends TestBase {
 
     @Given("Click Add new Task")
     public void clickAddNewTask() throws MalformedURLException {
-        Android_setUp();
+//        Android_setUp();
+        iOS_setUp();
         tasksListPage = new TasksListPage(driver);
         createTaskPage = new CreateTaskPage(driver);
         tasksListPage.clickAddTaskBtn();
