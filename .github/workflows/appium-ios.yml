@@ -24,4 +24,5 @@ jobs:
             npm install -g appium@v1.20.2
             appium -v
             appium &>/dev/null &
-            mvn clean test -PiOS
+            mvn test -Dcucumber.options="--tags @test"
+
