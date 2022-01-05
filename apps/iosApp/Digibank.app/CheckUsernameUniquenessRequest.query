@@ -1,0 +1,10 @@
+query CheckUsernameUniqueness($username: String!) {
+  checkUsernameUniqueness(username: $username) {
+    usernameIsUnique
+    error {
+      code
+      name
+      message
+    }
+  }
+}

@@ -1,0 +1,5 @@
+mutation HandleIneligibleCustomer($handleIneligibleCustomerInput: HandleIneligibleCustomerInput!) {
+  handleIneligibleCustomer(handleIneligibleCustomerInput: $handleIneligibleCustomerInput) {
+    customerId
+  }
+}

@@ -1,0 +1,9 @@
+mutation UpdatePersonalDetails($personalDetailsInput: PersonalDetailsInput!) {
+  updatePersonalDetails(personalDetailsInput: $personalDetailsInput) {
+    error {
+      message
+      name
+      code
+    }
+  }
+}

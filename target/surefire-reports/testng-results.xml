@@ -2,7 +2,7 @@
 <testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="3635" started-at="2022-01-05T15:35:23Z" finished-at="2022-01-05T15:35:27Z">
+  <suite name="Command line suite" duration-ms="3127" started-at="2022-01-05T17:27:51Z" finished-at="2022-01-05T17:27:54Z">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@2f686d1f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
@@ -10,23 +10,23 @@
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.iOS_Todo_Test@3fee9989]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Command line test" duration-ms="3635" started-at="2022-01-05T15:35:23Z" finished-at="2022-01-05T15:35:27Z">
+    <test name="Command line test" duration-ms="3127" started-at="2022-01-05T17:27:51Z" finished-at="2022-01-05T17:27:54Z">
       <class name="tests.TestBase">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.TestBase@73ad2d6]" name="setUpClass" is-config="true" duration-ms="7" started-at="2022-01-05T15:35:27Z" finished-at="2022-01-05T15:35:27Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.TestBase@73ad2d6]" name="setUpClass" is-config="true" duration-ms="5" started-at="2022-01-05T17:27:54Z" finished-at="2022-01-05T17:27:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:tests.TestBase@73ad2d6]" name="tearDownClass" is-config="true" duration-ms="2" started-at="2022-01-05T15:35:27Z" finished-at="2022-01-05T15:35:27Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:tests.TestBase@73ad2d6]" name="tearDownClass" is-config="true" duration-ms="2" started-at="2022-01-05T17:27:54Z" finished-at="2022-01-05T17:27:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- tests.TestBase -->
       <class name="tests.iOS_Todo_Test">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.iOS_Todo_Test@3fee9989]" name="setUpClass" is-config="true" duration-ms="89" started-at="2022-01-05T15:35:24Z" finished-at="2022-01-05T15:35:24Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.iOS_Todo_Test@3fee9989]" name="setUpClass" is-config="true" duration-ms="80" started-at="2022-01-05T17:27:52Z" finished-at="2022-01-05T17:27:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="test_add_task(java.lang.String, java.lang.String)[pri:0, instance:tests.iOS_Todo_Test@3fee9989]" name="test_add_task" duration-ms="1751" started-at="2022-01-05T15:35:24Z" data-provider="tasks data" finished-at="2022-01-05T15:35:26Z">
+        <test-method status="FAIL" signature="test_add_task(java.lang.String, java.lang.String)[pri:0, instance:tests.iOS_Todo_Test@3fee9989]" name="test_add_task" duration-ms="1511" started-at="2022-01-05T17:27:52Z" data-provider="tasks data" finished-at="2022-01-05T17:27:53Z">
           <params>
             <param index="0">
               <value>
@@ -43,13 +43,13 @@
             <message>
               <![CDATA[Connection refused (Connection refused)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'PLPC017457', ip: 'fe80:0:0:0:8e6:7d9:3749:17a9%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_311'
+System info: host: 'PLPC017457', ip: 'fe80:0:0:0:8e6:7d9:3749:17a9%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_291'
 Driver info: driver.version: IOSDriver]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: Connection refused (Connection refused)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'PLPC017457', ip: 'fe80:0:0:0:8e6:7d9:3749:17a9%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_311'
+System info: host: 'PLPC017457', ip: 'fe80:0:0:0:8e6:7d9:3749:17a9%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_291'
 Driver info: driver.version: IOSDriver
 at io.appium.java_client.remote.AppiumCommandExecutor.lambda$6(AppiumCommandExecutor.java:259)
 at java.util.Optional.orElseGet(Optional.java:267)
@@ -145,7 +145,7 @@ at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecu
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_add_task -->
-        <test-method status="FAIL" signature="test_add_task(java.lang.String, java.lang.String)[pri:0, instance:tests.iOS_Todo_Test@3fee9989]" name="test_add_task" duration-ms="1009" started-at="2022-01-05T15:35:26Z" data-provider="tasks data" finished-at="2022-01-05T15:35:27Z">
+        <test-method status="FAIL" signature="test_add_task(java.lang.String, java.lang.String)[pri:0, instance:tests.iOS_Todo_Test@3fee9989]" name="test_add_task" duration-ms="1009" started-at="2022-01-05T17:27:53Z" data-provider="tasks data" finished-at="2022-01-05T17:27:54Z">
           <params>
             <param index="0">
               <value>
@@ -162,13 +162,13 @@ at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecu
             <message>
               <![CDATA[Connection refused (Connection refused)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'PLPC017457', ip: 'fe80:0:0:0:8e6:7d9:3749:17a9%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_311'
+System info: host: 'PLPC017457', ip: 'fe80:0:0:0:8e6:7d9:3749:17a9%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_291'
 Driver info: driver.version: IOSDriver]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: Connection refused (Connection refused)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'PLPC017457', ip: 'fe80:0:0:0:8e6:7d9:3749:17a9%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_311'
+System info: host: 'PLPC017457', ip: 'fe80:0:0:0:8e6:7d9:3749:17a9%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_291'
 Driver info: driver.version: IOSDriver
 at io.appium.java_client.remote.AppiumCommandExecutor.lambda$6(AppiumCommandExecutor.java:259)
 at java.util.Optional.orElseGet(Optional.java:267)
@@ -264,17 +264,17 @@ at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecu
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_add_task -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:tests.iOS_Todo_Test@3fee9989]" name="tearDownClass" is-config="true" duration-ms="1" started-at="2022-01-05T15:35:27Z" finished-at="2022-01-05T15:35:27Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:tests.iOS_Todo_Test@3fee9989]" name="tearDownClass" is-config="true" duration-ms="2" started-at="2022-01-05T17:27:54Z" finished-at="2022-01-05T17:27:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- tests.iOS_Todo_Test -->
       <class name="runner.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.TestRunner@2f686d1f]" name="setUpClass" is-config="true" duration-ms="714" started-at="2022-01-05T15:35:23Z" finished-at="2022-01-05T15:35:24Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.TestRunner@2f686d1f]" name="setUpClass" is-config="true" duration-ms="454" started-at="2022-01-05T17:27:51Z" finished-at="2022-01-05T17:27:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.TestRunner@2f686d1f]" name="tearDownClass" is-config="true" duration-ms="36" started-at="2022-01-05T15:35:24Z" finished-at="2022-01-05T15:35:24Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.TestRunner@2f686d1f]" name="tearDownClass" is-config="true" duration-ms="37" started-at="2022-01-05T17:27:52Z" finished-at="2022-01-05T17:27:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

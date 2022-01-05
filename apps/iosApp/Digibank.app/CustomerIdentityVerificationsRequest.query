@@ -1,0 +1,10 @@
+mutation CustomerIdentityVerifications($customerIdentityVerificationsInput: CustomerIdentityVerificationsInput!) {
+  customerIdentityVerifications(customerIdentityVerificationsInput: $customerIdentityVerificationsInput) {
+    success
+    error {
+      code
+      name
+      message
+    }
+  }
+}

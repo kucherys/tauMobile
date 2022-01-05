@@ -1,0 +1,11 @@
+mutation CreateCbsAccount($cbsAccountInput: CreateCbsAccountInput!) {
+  createCbsAccount(cbsAccountInput: $cbsAccountInput) {
+    accountId
+    accountNumber
+    error {
+      code
+      name
+      message
+    }
+  }
+}

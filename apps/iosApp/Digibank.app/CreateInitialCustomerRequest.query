@@ -1,0 +1,5 @@
+mutation Mutation($customerMobileInput: CustomerMobileDeviceInput!) {
+  createInitialCustomer(customerMobileInput: $customerMobileInput) {
+    customerId
+  }
+}

@@ -1,0 +1,5 @@
+mutation ConfirmPhoneNumber($number: String!) {
+  confirmPhoneNumber(number: $number) {
+    success
+  }
+}

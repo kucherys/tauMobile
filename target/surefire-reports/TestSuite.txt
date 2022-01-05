@@ -1,11 +1,11 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 3.888 sec <<< FAILURE!
-test_add_task(tests.iOS_Todo_Test)  Time elapsed: 1.756 sec  <<< FAILURE!
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 3.677 sec <<< FAILURE!
+test_add_task(tests.iOS_Todo_Test)  Time elapsed: 1.515 sec  <<< FAILURE!
 org.openqa.selenium.WebDriverException: Connection refused (Connection refused)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'PLPC017457', ip: 'fe80:0:0:0:8e6:7d9:3749:17a9%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_311'
+System info: host: 'PLPC017457', ip: 'fe80:0:0:0:8e6:7d9:3749:17a9%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_291'
 Driver info: driver.version: IOSDriver
 	at io.appium.java_client.remote.AppiumCommandExecutor.lambda$6(AppiumCommandExecutor.java:259)
 	at java.util.Optional.orElseGet(Optional.java:267)
@@ -61,10 +61,10 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
 	... 48 more
 
-test_add_task(tests.iOS_Todo_Test)  Time elapsed: 1.009 sec  <<< FAILURE!
+test_add_task(tests.iOS_Todo_Test)  Time elapsed: 1.008 sec  <<< FAILURE!
 org.openqa.selenium.WebDriverException: Connection refused (Connection refused)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'PLPC017457', ip: 'fe80:0:0:0:8e6:7d9:3749:17a9%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_311'
+System info: host: 'PLPC017457', ip: 'fe80:0:0:0:8e6:7d9:3749:17a9%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_291'
 Driver info: driver.version: IOSDriver
 	at io.appium.java_client.remote.AppiumCommandExecutor.lambda$6(AppiumCommandExecutor.java:259)
 	at java.util.Optional.orElseGet(Optional.java:267)

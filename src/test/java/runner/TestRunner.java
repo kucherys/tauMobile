@@ -6,6 +6,6 @@ import tests.TestBase;
 @CucumberOptions(features="src/test/resources/features/CreateTaskExampleTable.feature"
 ,glue= {"steps"}
 ,plugin= {"pretty","html:target/cucumber-html-report.html"}
-,tags = "@test")
+,tags = "@landIOS")
 public class TestRunner extends TestBase {
 }

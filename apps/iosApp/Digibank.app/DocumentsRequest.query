@@ -1,0 +1,16 @@
+query Documents {
+  documents {
+    documents {
+      id
+      url
+      title
+      version
+      type
+    }
+    error {
+      code
+      name
+      message
+    }
+  }
+}
