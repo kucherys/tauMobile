@@ -16,12 +16,14 @@ public class LaunchPageSteps extends TestBase {
 
     @Given("Appium server and simulator with application type iOS started")
     public void setUpIosTask() throws MalformedURLException {
-        iOS_setUp();
-        launchPage = new LaunchPage (driver);
+//        startServer();
+        iOS_setUpGHA();
+
     }
 
     @When("I print login button name")
     public void printLoginButtonName() {
+        launchPage = new LaunchPage (driver);
         System.out.println("IOS BUTTON NAME: " + launchPage.getLogInButtonName());
     }
 
