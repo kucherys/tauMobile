@@ -2,6 +2,7 @@ package steps;
 
 import PageObjects.CreateTaskPage;
 import PageObjects.TasksListPage;
+import io.cucumber.java.After;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -16,7 +17,7 @@ public class CreateNewTask extends TestBase {
     @Given("Click Add new Task")
     public void clickAddNewTask() throws MalformedURLException {
 //        Android_setUp();
-//        startServer();
+        startServer();
         iOS_setUp();
         tasksListPage = new TasksListPage(driver);
         createTaskPage = new CreateTaskPage(driver);
@@ -42,5 +43,11 @@ public class CreateNewTask extends TestBase {
     public void taskAddedSuccessfully() {
         driver.hideKeyboard();
         tearDown();
+    }
+
+    @After
+    public void stopAppiumServer(){
+        System.out.println("Stop appium server in INITIALIZATION class");
+        service.stop();
     }
 }
