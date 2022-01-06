@@ -22,7 +22,7 @@ jobs:
       with:
        node-version: '10.16.3'
     - run: |
-            npm install -g appium@v1.20.2
+            npm install -g appium@v1.22.1
             appium -v
             appium &>/dev/null &
             mvn test -Dcucumber.options="--tags @testIOS"
