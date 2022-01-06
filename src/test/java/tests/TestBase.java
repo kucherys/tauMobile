@@ -65,7 +65,7 @@ public class TestBase extends AbstractTestNGCucumberTests {
         capabilities.setCapability("isHeadless",true);
         capabilities.setCapability("showXcodeLog",true);
         capabilities.setCapability("app",
-                System.getProperty("user.dir") + "/apps/iosApp/Digibank.app");
+                System.getProperty("user.dir") + "/apps/DailyCheck.zip");
         driver = new IOSDriver<>(new URL("http://localhost:4723/wd/hub"), capabilities);
     }
 
