@@ -3,6 +3,7 @@ package steps;
 import PageObjects.CreateTaskPage;
 import PageObjects.LaunchPage;
 import PageObjects.TasksListPage;
+import io.cucumber.java.After;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -17,7 +18,8 @@ public class LaunchPageSteps extends TestBase {
     @Given("Appium server and simulator with application type iOS started")
     public void setUpIosTask() throws MalformedURLException {
 //        startServer();
-        iOS_setUpGHA();
+        iOS_setUpUpdated();
+//        iOS_setUpGHA();
 
     }
 
@@ -36,5 +38,11 @@ public class LaunchPageSteps extends TestBase {
     public void confitmTests(String result) {
         System.out.println("CUCUMBER TESTS PASSED WITH RESULT: " + result);
 
+    }
+
+    @After
+    public void stopAppiumServer(){
+        System.out.println("Stop appium server in INITIALIZATION class");
+        service.stop();
     }
 }

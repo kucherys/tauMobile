@@ -69,6 +69,20 @@ public class TestBase extends AbstractTestNGCucumberTests {
         driver = new IOSDriver<>(new URL("http://localhost:4723/wd/hub"), capabilities);
     }
 
+    public void iOS_setUpUpdated() throws MalformedURLException {
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setCapability("platformName", "iOS");
+        capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "15.2");
+        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 12");
+//        capabilities.setCapability("deviceName", "iPhone X");
+        capabilities.setCapability("automationName","XCUITest");
+        capabilities.setCapability("isHeadless",true);
+        capabilities.setCapability("showXcodeLog",true);
+        capabilities.setCapability("app",
+                System.getProperty("user.dir") + "/apps/iosApp/Digibank.app");
+        driver = new IOSDriver<>(new URL("http://localhost:4723/wd/hub"), capabilities);
+    }
+
     public void iOS_setUpGHA() throws MalformedURLException {
         System.out.println("START CAPABILITIES");
         IOSDriver<IOSElement> iosDriver;

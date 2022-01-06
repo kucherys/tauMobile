@@ -1,6 +1,0 @@
-#surefire_0
-#Wed Jan 05 18:27:48 CET 2022
-cucumber.options=--tags @testIOS
-basedir=/Users/syky/Documents/TestAutomation/frm/Gha/TU/Appium-TAU
-user.dir=/Users/syky/Documents/TestAutomation/frm/Gha/TU/Appium-TAU
-localRepository=/Users/syky/.m2/repository
