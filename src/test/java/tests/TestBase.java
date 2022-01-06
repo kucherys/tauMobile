@@ -94,7 +94,7 @@ public class TestBase extends AbstractTestNGCucumberTests {
         cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "15.2");
         cap.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 12");
         cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.IOS_XCUI_TEST);
-        cap.setCapability("isHeadless",true);
+//        cap.setCapability("isHeadless",true);
         cap.setCapability("showXcodeLog",true);
         cap.setCapability(IOSMobileCapabilityType.LAUNCH_TIMEOUT, 500000);
 //        cap.setCapability("commandTimeouts", "12000");
